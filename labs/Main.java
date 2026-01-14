@@ -24,10 +24,15 @@ public class Main {
         e) Daily low temperature (int or double)
         f) UV index (int)
         */
- 
- 
+
+
         // TODO: Declare your variables here
- 
+        String weatherConditions;
+        String pOp;
+        String windSpeed;
+        int dailyHighTemp;
+        int dailyLowTemp;
+        int UVIndex;
  
         /*
         STEP 2: Get input from the user using Scanner
