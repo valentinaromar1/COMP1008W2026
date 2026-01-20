@@ -147,7 +147,7 @@ public class Main {
         System.out.println("balance costant: $" + 0.0);
         // 5. Methods with Parameters & Return Values
         double newBalance = acc2.deposit( 1000);
-        system.out.println("acc2 new balance = $" newBalance);
+        System.out.println("acc2 new balance = $" + newBalance);
         // 6. Abstract Class
        SavingsAccount sa = new SavingsAccount(500,  0.05);
        sa.displayType();
