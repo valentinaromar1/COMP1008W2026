@@ -2,6 +2,7 @@ package labs;
 
 import java.util.Scanner;
  
+ //valentina romar
  
 /*
     Week 2 Lab: Weather Report Program
