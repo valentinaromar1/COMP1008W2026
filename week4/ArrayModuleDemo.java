@@ -1,3 +1,4 @@
+package week4;
 import java.util.ArrayList;
 import java.util.Scanner;
  
@@ -21,11 +22,13 @@ import java.util.Scanner;
 // STEP 1: Utility class for array operations
 class ArrayUtilities {
  
- 
+    
+
     // Method to calculate sum of array elements
     public static int sumArray(int[] numbers) {
         // TODO: use loop to calculate sum
         return 0;
+        
     }
  
  
@@ -33,6 +36,8 @@ class ArrayUtilities {
     public static double averageArray(int[] numbers) {
         // TODO: call sumArray and compute average
         return 0.0;
+
+    
     }
  
  
@@ -95,7 +100,7 @@ public class ArrayModuleDemo {
  
         // TODO: Populate array using Scanner
         // Hint: use for loop
- 
+        
  
  
  
