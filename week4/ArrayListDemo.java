@@ -1,37 +1,36 @@
-package week4;
- // LESSON 4 - PART 2
- 
+// LESSON 4 - PART 2
+
+import java.util.ArrayList;
+
 public class ArrayListDemo {
     public static void main(String[] args) {
  
         // STEP 1: Create an ArrayList of Strings
-        int[] numbers = {10,30,50,70,90};
+        ArrayList<String> fruits = new ArrayList<>();
 
         // STEP 2: Add elements to the ArrayList
-        
+        fruits.add("apple");
+        fruits.add("banana");
+        fruits.add("peach");
+        fruits.add("cherry");
 
-        System.out.println("acessing array elements");
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println( "index: " + i + " : " + numbers[i]);
-        }
  
         // STEP 3: Print all elements
-       numbers[1] = 35;
- 
-       //enahnced for loop
-        //for(int Variable: array){}
-
-        for(int num : numbers){
-            System.out.println(num);
+        for(String i: fruits){
+            System.out.println(i);
         }
-        
+
         // STEP 4: Remove an element
-       
- 
+       //fruits.remove("banana");
+        fruits.remove(1);
+
         // STEP 5: Access element by index
-       
+       System.out.println("\nfrist fruit" + fruits.get(0));
  
         // STEP 6: Check if a fruit exists
         
+        if(fruits.contains("cherry")){
+            System.out.println("cherry is in the list");
+        }
 } 
 }

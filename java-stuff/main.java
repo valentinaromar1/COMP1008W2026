@@ -149,8 +149,8 @@ public class Main {
         double newBalance = acc2.deposit( 1000);
         System.out.println("acc2 new balance = $" + newBalance);
         // 6. Abstract Class
-       SavingsAccount sa = new SavingsAccount(500,  0.05);
-       sa.displayType();
+        //SavingsAccount sa = new SavingsAccount(500,  0.05);
+       // sa.displayType();
         System.err.println("intrest for savings account = $" + sa.calculateInterest());
         // 7. Interface
         AccountReport report = new AccountReport(acc1)
@@ -163,4 +163,4 @@ public class Main {
        input.close();
     }
 }
- 
+}

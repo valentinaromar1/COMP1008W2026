@@ -1,4 +1,3 @@
-package week4;
 import java.util.ArrayList;
 import java.util.Scanner;
  
@@ -27,23 +26,37 @@ class ArrayUtilities {
     // Method to calculate sum of array elements
     public static int sumArray(int[] numbers) {
         // TODO: use loop to calculate sum
-        return 0;
-        
+        int sum = 0;
+        for (int num: numbers){
+            sum += num;
+        }
+        return sum;  
     }
  
  
     // Method to find average
     public static double averageArray(int[] numbers) {
         // TODO: call sumArray and compute average
-        return 0.0;
+        int sum = sumArray(numbers);
+
+
+        return (double)sum / numbers.length;
 
     
     }
  
  
-    // Variable-length argument method
+    // Variable-length argument method(varargs method)
     public static int maxValue(int... values) {
         // TODO: find maximum value
+        int max = values[0];
+
+        for(int val : values){
+            if( val > max){
+                max = val;
+            }
+        }
+        
         return 0;
     }
 }
@@ -61,18 +74,39 @@ class GradeBook {
     // Constructor
     public GradeBook(int[][] gradesArray) {
         // TODO: assign grades
+
+        this.grades = gradesArray;
     }
  
  
     // Display grades
     public void displayGrades() {
         // TODO: nested loop to print 2D array
+        System.out.println("\nstudent grades: ");
+        for (int i = 0; i < grades[i].length; i++) {
+            System.out.print("student: " + (i + 1) + ":");
+
+            for (int j = 0; j < grades[i].length; j++) {
+                System.out.print(grades[i][j] + " ");
+            }
+            System.out.println();
+        }
+    
     }
- 
  
     // Calculate average for each student
     public void calculateAverages() {
         // TODO: loop through rows and compute averages
+        System.out.println("\n student avarages");
+        for (int i = 0; i < grades.length; i++) {
+            int sum = 0;
+            for(int num : grades[i]){
+                sum += num;
+            }
+            
+            double avg = (double) sum/grades[i].length;
+            System.out.println("student" + (i+1) + "average: " + avg);
+        }
     }
 }
  
@@ -100,17 +134,26 @@ public class ArrayModuleDemo {
  
         // TODO: Populate array using Scanner
         // Hint: use for loop
-        
- 
- 
+        System.out.println("enter 5 numbers");
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = scanner.nextInt();
+            
+        }
  
         // TODO: Display array using enhanced for loop
- 
- 
- 
- 
+        System.out.println("\narray values: ");
+        
+        for(int num:numbers){
+            System.out.println(num);
+        }
+
         // TODO: Call sumArray and averageArray methods
- 
+        int sum = ArrayUtilities.sumArray(numbers);
+        double avg = ArrayUtilities.averageArray(numbers);
+
+        System.out.println("\nSum" + sum);
+        System.out.println("\navarage" + avg);
  
  
  
@@ -121,8 +164,10 @@ public class ArrayModuleDemo {
  
         try {
             // TODO: Access an invalid index to demonstrate exception
+            System.out.println(numbers[10]);
         } catch (ArrayIndexOutOfBoundsException e) {
             // TODO: print exception message
+            System.out.println("\nexception caught" + e.getMessage());
         }
  
  
@@ -141,12 +186,12 @@ public class ArrayModuleDemo {
  
  
         // TODO: Create GradeBook object
+        GradeBook gb = new GradeBook(studentGrades);
         // TODO: Display grades
+        gb.displayGrades();
         // TODO: Calculate averages
- 
- 
- 
- 
+        gb.calculateAverages();
+
         // -----------------------------
         // PART 4: ArrayList Introduction
         // -----------------------------
@@ -156,12 +201,22 @@ public class ArrayModuleDemo {
  
  
         // TODO: Add 3 student names
+        names.add("tonmy");
+        names.add("graig");
+        names.add("jonhs");
         // TODO: Display names using enhanced for loop
+        System.out.println("\nStudent names: ");
+        for(String name: names){
+            System.out.println(name);
+        }
         // TODO: Remove one name
+        names.remove("tonmy");
+
         // TODO: Display updated list
- 
- 
- 
+        System.out.println("\nUdated student names");
+        for(String name: names){
+            System.out.println(name);
+        }
  
         // -----------------------------
         // PART 5: Varargs Method Call
@@ -169,8 +224,9 @@ public class ArrayModuleDemo {
  
  
         // TODO: Call maxValue with multiple arguments
+        int max = ArrayUtilities.maxValue(10, 20, 5, 40, 15);
         // Example: maxValue(10, 20, 5, 40, 15)
- 
+        System.out.println("\nMax value" + max);
  
         scanner.close();
     }
