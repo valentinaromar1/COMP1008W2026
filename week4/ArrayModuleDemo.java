@@ -217,7 +217,7 @@ public class ArrayModuleDemo {
         for(String name: names){
             System.out.println(name);
         }
- 
+        
         // -----------------------------
         // PART 5: Varargs Method Call
         // -----------------------------
