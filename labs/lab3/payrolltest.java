@@ -1,3 +1,6 @@
+
+import java.net.SocketTimeoutException;
+
 public class PayrollTest {
  
     public static void main(String[] args) {
@@ -7,6 +10,7 @@ public class PayrollTest {
         // TODO 10: Display employee details
  
         // TODO 11: Display earnings
+        System.out.println();
     }
 }
  

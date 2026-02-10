@@ -1,6 +1,4 @@
-Employee.java
- 
- 
+
 public abstract class Employee {
  
     private String firstName;
@@ -8,7 +6,7 @@ public abstract class Employee {
     private String socialSecurityNumber;
  
     // TODO 1: Create a constructor
- 
+    
     // TODO 2: Create getters
  
     // TODO 3: Declare abstract method earnings()
