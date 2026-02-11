@@ -7,22 +7,22 @@ public class books {
     String bookAuthorName1 = "carl paul";
     String bookName1 = "the handy cook book";
     String book1Id = "1234567899";
-    boolean book1 = true;
+    boolean availableBook1 = true;
     //book2 setup
     String bookAuthorName2 = "victor jest";
     String bookName2= "how to manage family";
     String book2Id = "2345678910";
-    boolean book2 = true;
+    boolean availableBook2 = true;
     //book3 setup
     String bookAuthorName3 = "sasha tifto";
     String bookName3 = "trains and transit";
     String book3Id = "3456789101";
-    boolean book3 = true;
+    boolean availableBook3 = true;
     //book4 setup
     String bookAuthorName4 = "andre invecee";
     String bookName4= "im lonely";
     String book4Id = "4567891011";
-    boolean book4 = true;
+    boolean availableBook4 = true;
 
     
     void displayBookInfo() {
