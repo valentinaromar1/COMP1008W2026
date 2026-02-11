@@ -18,7 +18,7 @@ public class libararyManager {
         if(userInput = "a"){
             System.out.println("please input the info of the book you'd like to add");
         }
-        
+
         else if(userInput = "b"){
             displayBookInfo(); 
         }
@@ -46,6 +46,7 @@ public class libararyManager {
             System.err.println(bookName3 + " by " + bookAuthorName3);
             System.err.println(bookName4 + " by" + bookAuthorName4);
         }
+        
         else if (userInput = "exit"){
             System.out.println("bye bye");
         }
