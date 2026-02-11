@@ -28,9 +28,12 @@ public class libararyManager {
         }
         else if(userInput = "e"){
             System.out.println("what book are you returning");
+
         }
-        
-        else if(userInput = "exit"){
+        else if (userInput = "exit"){
             System.out.println("bye bye");
+        }
+        else{
+            System.out.println("that is not a vaild option");
         }
 }
