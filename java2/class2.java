@@ -167,7 +167,7 @@ public class class2{
         s1.gradeDescription();
         s1.printNumbersUpToGPA();
         s1.printMultiplesOfID();
-        s1.printSemesterGPA();
+
         s1.enterGPAS();
         s1.updateGPA();
     }
