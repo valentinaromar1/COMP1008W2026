@@ -25,7 +25,7 @@ public class ArrayListDemo {
         fruits.remove(1);
 
         // STEP 5: Access element by index
-       System.out.println("\nfrist fruit" + fruits.get(0));
+       System.out.println("\nfrist fruit " + fruits.get(0));
  
         // STEP 6: Check if a fruit exists
         
