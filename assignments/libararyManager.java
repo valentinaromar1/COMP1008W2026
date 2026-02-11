@@ -22,6 +22,7 @@ public class libararyManager {
         }
         else if(userInput = "c"){
             System.out.println("what is the authors name");
+            System.err.println("athor"bookAuthorName1);
         }
         else if(userInput = "d"){
             System.out.println("what book would you like to checkout");
