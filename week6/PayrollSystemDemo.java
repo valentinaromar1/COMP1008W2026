@@ -67,7 +67,7 @@ abstract class Employee implements Payable {
     @Override
     public String toString() {
         // TODO: return formatted employee info
-        return firstName + " " + lastName + "\nSSN: " + socialSecurityNumber;
+        return (firstName + " " + lastName + "\nSSN: " + socialSecurityNumber);
     }
 }
  
